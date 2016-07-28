@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Adjacent Sibling Combinator</title>
+        <style type="text/css">
+        	p { margin-top: 1.5em; }
+            h2 + p { margin-top: 0; color: blue; }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here --> 
+        <span><a href="index.html"><< back</a></span>
+        <h2>Advanced Selectors</h2>
+        <h3>Adjacent Sibling Combinator</h3>
+        <p>The adjacent sibling combinator targets the sibling that immediately follows an element. This selector has a number of uses. One common use is when you need to target, for example, the <b><em>first</em></b> p element to follow an h1 or an h2 in your body text, as follows:</p>
+        <code>p { margin-top: 1.5em; }</code><br/>
+        <code>h2 + p { margin-top: 0; color: blue; }</code>
+        <h2>H2 Header</h2>
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+    </body>
+</html>               

@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Child Combinator</title>
+        <style type="text/css">
+        	nav > ul {
+        		background: blue;
+        		border: 2px solid red;
+        	}
+        	nav ul ul {
+        		background: green;
+        		border: 1px green white;
+        	}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <span><a href="index.html"><< back</a></span>
+        <h2>Advanced Selectors</h2>
+        <h3>Child Combinator</h3>
+        <p>The child combinator allows you to select only the ul that is a direct child of the nav element, so that the styles aren't applied to any nested ul elements.</p>
+        <code>nav > ul { background: blue; border: 2px solid red; }</code>
+        <nav class="container">
+        	<ul>Parent
+        		<ul>Child</ul>
+        	</ul>
+        </nav>
+    </body>
+</html>               

@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>General Sibling Combinator</title>
+        <style type="text/css">
+        	h2.important ~ p { color: red; }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <span><a href="index.html"><< back</a></span>
+        <h2>Advanced Selectors</h2>
+        <h3>General Sibling Combinator</h3>
+        <p>The general sibling combinator targets <b><em>any</em></b> sibling that follows an element. For example, this selector targets all p elements that follow an h2 with a class of <em>important</em>, allowing you to apply a text color of red to all paragraphs under that particular heading.</p>
+        <code>h2.important ~ p { color: red; }</code>
+        <h2 class="important">Everything below is important</h2>
+        <p>This text is very important.</p>
+        <p>This text is also very important.</p>
+        </nav>
+    </body>
+</html>  
