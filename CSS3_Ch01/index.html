@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>CSS3 - Ch01: Advanced Selectors</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body style="margin:0 10px 0 10px;">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -24,14 +24,22 @@
         <h2>Ch01 - Advanced Selectors</h2>
         <h3>Child and Sibling Selectors</h3>
         <ul>
-            <li><a href="child_combinator.html">Child Combinator</a></li>
-            <li><a href="adjacent_sibling_combinator.html">Adjacent Sibling Combinator</a></li>
-            <li><a href="general_sibling_combinator.html">General Sibling Combinator</a></li>
+            <li><a href="child_combinator.html">Child Combinator</a> using a <b>></b> sign (e.g. nav > ul) gets the <b>first</b> ul <b>inside</b> nav</li>
+            <li><a href="adjacent_sibling_combinator.html">Adjacent Sibling Combinator</a> using a <b>+</b> sign (e.g. h2 + p) gets the <b>first</b> p <b>after</b> h2</li>
+            <li><a href="general_sibling_combinator.html">General Sibling Combinator</a> using a <b>~</b> sign (e.g. h2 ~ p) gets <b>all</b> p's <b>after</b> h2</li>
         </ul>
         <h3>Attribute Selectors</h3>
         <ul>
-            <li><a href="selecting_based_on_the_existence_of_an_html_attribute.html">Selecting based on the existence of an HTML Attribute</a></li>
-            <li><a href="selecting_based_on_the_exact_value_of_an_html_attribute.html">Selecting based on the exact value of an HTML Attribute</a></li>
+            <li><a href="selecting_based_on_the_existence_of_an_html_attribute.html">Selecting based on the <b>existence</b> of an HTML Attribute</a> using the attribute name, e.g. a[title]</li>
+            <li><a href="selecting_based_on_the_exact_value_of_an_html_attribute.html">Selecting based on the <b>exact value</b> of an HTML Attribute</a> using an equal sign, e.g. a[type="submit"]</li>
+            <li><a href="selecting_based_on_the_partial_contents_of_an_html_attribute_value.html">Selecting based on the <b>partial contents</b> of an HTML Attribute value</a> using an asterisk and equal sign, e.g. a[href*="twitter"]</li>
+            <li><a href="selecting_based_on_the_beginning_of_an_html_attribute_value.html">Selecting based on the <b>beginning</b> of an HTML Attribute value</a> using a caret and equal sign, e.g. a[href^="http"]</li>
+            <li><a href="selecting_based_on_the_end_of_an_html_attribute_value.html">Selecting based on the <b>end</b> of an HTML Attribute value</a> using a dollar and equal sign, e.g. a[href$=".nz"]</li>
+        </ul>
+        <h3>Pseudo-Classes</h3>
+        <ul>
+            <li><a href="first_and_last.html">First and Last</a></li>
+            <li>more to be added ...</li>
         </ul>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>

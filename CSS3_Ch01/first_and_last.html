@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>First and Last</title>
+        <style type="text/css">
+        	ul { border: 1px solid #000; 
+                 list-style-type: none;
+            }
+            ul li { border-bottom: 1px solid #000; }
+            ul.example1 li:last-child { border-bottom: none; }
+            ul.example2 li:first-child { background-color: red; }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <span><a href="index.html"><< back</a></span>
+        <h2>Advanced Selectors</h2>
+        <h3>First and Last</h3>
+        <p>In this example, the pseudo-class looks for the <b>last child</b> in the ul, which is, of course, the last navigation list item, and it removes the border-bottom styling.</p>
+        <code>ul { border: 1px solid #000; list-style-type: none; }</code><br/>
+        <code>ul li { border-bottom: 1px solid #000; }</code><br/>
+        <code>ul li:last-child { border-bottom: none; }</code><br/><br/>
+        <ul class="example1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <br/>
+        <p>In this example, the pseudo-class looks for the <b>first child</b> in the ul, which is, of course, the first navigation list item, and it sets the background color to red.</p>
+        <code>ul { border: 1px solid #000; list-style-type: none; }</code><br/>
+        <code>ul li { border-bottom: 1px solid #000; }</code><br/>
+        <code>ul li:first-child { background-color: red; }</code><br/><br/>
+        <ul class="example2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <br/>
+        <p>Other pseudo classes are:</p>
+        <ol>
+            <li>:first-of-type</li>
+            <li>:last-of-type</li>
+            <li>:only-child</li>
+            <li>:only-of-type</li>
+        </ol>
+    </body>
+</html>
